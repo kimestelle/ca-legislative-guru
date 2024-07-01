@@ -1,0 +1,16 @@
+.top-bar {
+    justify-content: center;
+    background-color: gray;
+    height: 100svh;
+    max-height: 100svh;
+    width: 5svh;
+    max-width: 95svh;
+    padding: 2svh;
+}
+
+.three-bars {
+    width: 5svh;
+    background-color: transparent;
+    padding: 0;
+}
+
