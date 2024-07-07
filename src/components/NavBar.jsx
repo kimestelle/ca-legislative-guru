@@ -13,11 +13,14 @@ const NavBar = () => {
 
     return (
         <div className={open ? 'top-bar open' : 'top-bar closed'}>
+        <h2>
+            CA Legislative Guru
+        </h2>
         <button onClick={handleOpenClick} className="three-bars">
             <img src={bars}>
             </img>
         </button>
-        {open && (
+            <div className={open ? 'open-bar bar-open' : 'open-bar bar-closed'}>
              <ul>
                 <li>
                     <Link to={'/block'}>
@@ -40,8 +43,8 @@ const NavBar = () => {
                     Block 6
                 </li>
              </ul>
-        )
-        }
+             </div>
+
         </div>
     )
 }
