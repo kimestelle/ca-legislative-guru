@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <div className='container'>
         <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/ca-legislative-guru" element={<HomePage />} />
           <Route path="/block1" element={<Block1 />} />
           <Route path="/block2" element={<Block2 />} />
           <Route path="/block3" element={<Block />} />
