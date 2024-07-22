@@ -13,9 +13,11 @@ const NavBar = () => {
 
     return (
         <div className={open ? 'top-bar open' : 'top-bar closed'}>
-        <h2>
-            CA Legislative Guru
-        </h2>
+        <Link to={'/'}>
+            <h2 className={open ? 'open-header' : 'closed-header'}>
+                CA Legislative Guru
+            </h2>
+        </Link>
         <button onClick={handleOpenClick} className="three-bars">
             <img src={bars}>
             </img>
@@ -23,24 +25,34 @@ const NavBar = () => {
             <div className={open ? 'open-bar bar-open' : 'open-bar bar-closed'}>
              <ul>
                 <li>
-                    <Link to={'/block'}>
+                    <Link to={'/block1'} onClick={handleOpenClick}>
                         Block 1
                     </Link>
                 </li>
                 <li>
-                    Block 2
+                    <Link to={'/block2'} onClick={handleOpenClick}>
+                        Block 2
+                    </Link>
                 </li>
                 <li>
-                    Block 3
+                <Link to={'/block3'} onClick={handleOpenClick}>
+                        Block 2
+                </Link>
                 </li>
                 <li>
-                    Block 4
+                <Link to={'/block4'} onClick={handleOpenClick}>
+                        Block 2
+                </Link>
                 </li>
                 <li>
-                    Block 5
+                <Link to={'/block5'} onClick={handleOpenClick}>
+                        Block 2
+                </Link>
                 </li>
                 <li>
-                    Block 6
+                    <Link to={'/block6'} onClick={handleOpenClick}>
+                            Block 2
+                    </Link>
                 </li>
              </ul>
              </div>

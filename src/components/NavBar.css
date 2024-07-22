@@ -11,10 +11,11 @@
     padding: 4svh;
     transition: 0.6s ease;
     color: white;
+    z-index: 5;
 }
 
 .open {
-    background-color: transparent;
+    background-color: white;
     color: #940b0b;
 }
 
@@ -32,6 +33,12 @@
     color: white;
 }
 
+.open-bar * {
+    color: white;
+}
+
+
+
 .bar-closed {
     transform: translateX(100%);
 }
@@ -47,4 +54,12 @@
     padding: 0;
     border: none;
     transition: slideIn 1s ease;
+}
+
+.open-header {
+    color: #940b0b;
+}
+
+.closed-header {
+    color: white;
 }

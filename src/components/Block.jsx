@@ -1,4 +1,3 @@
-import NavBar from './NavBar'
 import ResourceBar from './ResourceBar'
 
 const senate = [
@@ -18,8 +17,6 @@ const Block = () => {
     resourceMap.set('Assembly', assembly);
 
     return (
-        <div className='container'>
-            <NavBar/>
         <div id='homepage-contents' className='contents'> 
         <h1>
             Block 1
@@ -31,7 +28,6 @@ const Block = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laborum dolor mollitia, praesentium nemo aliquid molestiae nihil non esse! Quam incidunt voluptatum vitae totam illum, quidem vero deleniti reiciendis magni!
         </p>
         <ResourceBar resources={ resourceMap }/>
-        </div>
         </div>
     )
 }

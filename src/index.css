@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   /* border: 1px solid red; */
@@ -18,6 +21,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 111%;
+  margin-left: -5.2%;
 }
 
 h1 {
@@ -42,15 +50,54 @@ h3 {
 }
 
 h4 {
-  font-family: Cambria Bold, Georgia, serif;
+  font-family: Cambria, Georgia, serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+h5 {
+  font-family: Cambria Italic, Georgia, serif;
+  color: rgb(11, 49, 130);
+  font-size: 1em;
+}
+
+h6 {
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+  font-size: 1em;
+  line-height: 1;
 }
 
 p {
   font-family: Cambria, Georgia, serif; 
 }
 
+input, textarea {
+  border-radius: 1svh;
+  height: 4svh;
+  width: 100%;
+  color: black;
+  background-color: white;
+  padding-left: 1svh;
+  font-family: Cambria, Georgia, serif;
+}
+
+textarea {
+  min-height: 20svh;
+}
+
+button {
+  width: 20svh;
+  height: 4svh;
+  background-color: lightgray;
+  border-radius: 1svh;
+  color: black;
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+}
+
 body {
-  border: 1px solid blue;
   margin: 0;
   display: flex;
   place-items: center;
@@ -62,11 +109,44 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .contents {
   flex: 1;
-  padding: 2svw;
+  padding: 5svw;
   padding-top: 9svh;
+}
+
+.white-overlay {
+  position: absolute;
+  width: 105%;
+  left: -5%;
+  height: 67.5svw;
+  max-height: 67.5svw;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
+  z-index: 2; 
+  border: 1px solid red;
+}
+
+.bottom-bar {
+  color: white;
+  background-color: black;
+  width: 100svw;
+  height: 30svh;
+  padding: 3svh;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row {
+  flex-direction: row;
 }

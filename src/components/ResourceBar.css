@@ -1,6 +1,16 @@
 .resource-bar {
     width: 100%;
     padding: 3svh;
+    padding-top: 1svh;
+    margin-top: 2svh;
     bottom: 0;
     background: lightgray;
+}
+
+a {
+    color: #940B0B;
+}
+
+a:active {
+    color: gray;
 }
